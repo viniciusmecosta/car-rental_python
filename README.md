@@ -1,8 +1,28 @@
-#LONG DRIVE
-SISTEMA SIMPLES DE ALUGUEL DE CARROS EM PYTHON
-  *CRUD
-  *QTDESIGNER
-  *SQLITE 3
+# Long Drive - Sistema de Aluguel de Carros em Python
+
+Long Drive é um sistema simples de aluguel de carros desenvolvido em Python. Ele inclui operações CRUD básicas, uma interface gráfica criada com Qt Designer e utiliza o SQLite 3 para armazenamento de dados.
+
+## Funcionalidades
+
+- **CRUD**: Realize operações de criação, leitura, atualização e exclusão de registros de carros.
+- **Qt Designer**: Interface gráfica intuitiva desenvolvida com Qt Designer.
+- **SQLite 3**: Banco de dados leve e integrado para armazenar informações sobre carros e aluguéis.
+
+## Tecnologias Utilizadas
+
+### Python:
+
+- Desenvolvimento da lógica do sistema utilizando Python.
+- Utilização do módulo `sqlite3` para interação com o banco de dados.
+
+### Qt Designer:
+
+- Criação da interface do usuário de forma visual com Qt Designer.
+
+### SQLite 3:
+
+- Banco de dados embutido para armazenar informações sobre carros e transações de aluguel.
+
 <img width="683" alt="1" src="https://github.com/viniciusmecosta/LongDrive/assets/118303495/2c81b3f9-46de-4717-bf93-0676a7a65edc">
 <img width="685" alt="2" src="https://github.com/viniciusmecosta/LongDrive/assets/118303495/d6e0d5ca-1e8b-45c4-93e4-7cc23b580f7b">
 <img width="684" alt="3" src="https://github.com/viniciusmecosta/LongDrive/assets/118303495/0b7d7265-a85f-4a06-a8ae-eb7f5de5f048">
