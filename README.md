@@ -17,7 +17,7 @@ Long Drive é um sistema simples de aluguel de carros desenvolvido em Python. El
 
 ### Qt Designer:
 
-- Criação da interface do usuário de forma visual com Qt Designer.
+- Criação da interface do usuário de forma visual utilizando o Qt Designer.
 
 ### SQLite 3:
 
