@@ -2,6 +2,7 @@ from PyQt5 import uic, QtWidgets, QtCore
 import sqlite3
 from db.db_manager import DBManager
 
+
 dbmanager = DBManager("banco.db")
 
 
