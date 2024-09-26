@@ -1,5 +1,4 @@
 import sqlite3
-from db.queries import *
 import db.queries as queries
 
 class DBManager:
@@ -24,29 +23,14 @@ class DBManager:
             cursor.close()
             conn.close()
 
-    def get_funcionarios(self):
-        return self._execute_query(queries.SELECT_FUNCIONARIOS_DETALHADOS)
-
     def get_clientes(self):
         return self._execute_query(queries.SELECT_CLIENTES)
-
-    def get_login_funcionario(self, login):
-        return self._execute_query(queries.SELECT_FUNCIONARIOS_DETALHADOS, (login,))
-
-    def get_car_availability(self):
+    
+    def get_carros(self):
         return self._execute_query(queries.SELECT_NOME_CARRO_OCUP)
 
-    def get_all_clientes(self):
-        return self._execute_query(queries.SELECT_CLIENTES)
-
-    def get_all_funcionarios(self):
-        return self._execute_query(queries.SELECT_FUNCIONARIOS_DETALHADOS)
-
-    def get_all_carros(self):
-        return self._execute_query(queries.SELECT_NOME_CARRO_OCUP)
-
-    def get_user(self, login):
-        return self._execute_query(queries.SELECT_FUNCIONARIOS_DETALHADOS, (login,))
+    def get_funcionarios(self, login):
+        return self._execute_query(queries.SELECT_FUNCIONARIOS)
 
     def insert_funcionario(self, nome, login, cargo, senha):
         return self._execute_query(queries.INSERT_FUNCIONARIO, (nome, login, cargo, senha))

@@ -1,6 +1,5 @@
-SELECT_ALL_FUNCIONARIOS = "SELECT * FROM funcionarios"
+SELECT_FUNCIONARIOS = "SELECT * FROM funcionarios"
 SELECT_NOME_CARRO_OCUP = "SELECT nome_carro, ocup FROM carros"
-SELECT_FUNCIONARIOS_DETALHADOS = "SELECT nome_funcio, cargo_funcio, login_funcio, senha_funcio FROM funcionarios"
 SELECT_CLIENTES = "SELECT nome_cliente, cnh_cliente, nasc_cliente, end_cliente, tel_cliente FROM cliente"
 INSERT_FUNCIONARIO = "INSERT INTO funcionarios(nome_funcio, login_funcio, cargo_funcio, senha_funcio) VALUES (?, ?, ?, ?)"
 INSERT_CLIENTE = "INSERT INTO cliente(nome_cliente, cnh_cliente, nasc_cliente, end_cliente, tel_cliente) VALUES (?, ?, ?, ?, ?)"
