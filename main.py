@@ -1,11 +1,10 @@
 from PyQt5 import uic, QtWidgets, QtCore
 import sqlite3
+from db.db_manager import DBManager
+
+dbmanager = DBManager("banco.db")
 
 
-banco = sqlite3.connect('banco.db')
-
-
-#FUNCAO LOGIN
 def logar():
     login = pt1.loginspace.text()
     senha = pt1.pinspace.text()
@@ -385,7 +384,7 @@ def chamar_tela_devhrv():
         cursor.execute("SELECT * FROM carros")
         resultado = cursor.fetchall()
         for check in resultado:
-            if "HRV" == check[0]:
+            if "Hrv" == check[0]:
                 pt91.nome_cliente.setText(check[1])
                 pt91.diariaspace6.setText(check[3])
                 pt91.data_retirada.setText(check[4])
@@ -838,7 +837,7 @@ def setaralughrv():
     try:
         cursor = banco.cursor()
         cursor.execute(
-            "UPDATE carros SET cliente=?, data_alug=?, data_dev=?, ocup=? WHERE nome_carro='HRV'",
+            "UPDATE carros SET cliente=?, data_alug=?, data_dev=?, ocup=? WHERE nome_carro='Hrv'",
             (cliente, dataalug, datadev, ocup))
         banco.commit()
     except:
@@ -1088,6 +1087,6 @@ pt15.voltar_10.clicked.connect(logout15)
 pt16.voltar_10.clicked.connect(logout16)
 pt17.voltar_10.clicked.connect(logout17)
 
-
+banco = sqlite3.connect("banco.db")
 pt1.show()
 app.exec()

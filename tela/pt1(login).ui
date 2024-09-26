@@ -1014,7 +1014,7 @@ QPushButton:hover{
      </font>
     </property>
     <property name="text">
-     <string>2022</string>
+     <string>2024</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
